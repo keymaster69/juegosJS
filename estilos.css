@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Montserrat:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Amatic SC';
 }
 
 body {
-    background-color: #C1D0B5;
+       background-color: #C1D0B5;
 }
  
 .container {
@@ -24,4 +23,50 @@ body {
     padding: 3em;
     border-radius: 20px;
     box-shadow: 0 1.2em 2.4em rgba(0, 0, 0, 0.25);
+}
+
+#opciones-container div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2em 0 2.4em;
+}
+#opciones-container button:disabled{
+    border: 3px solid gray;
+    color: gray;
+    background-color: #efefef;
+}
+
+#opciones-container button:active{
+    background-color: violet;
+    border: 3px solid black;
+    color: white;
+}
+.letras-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6em;
+}   
+.letras-container button{
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 0.3em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nuevo-juego-popup{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.6em;
 }
